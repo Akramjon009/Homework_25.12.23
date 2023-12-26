@@ -8,9 +8,9 @@
     static void Main(string[] args)
     {
 
-        int[] Myarray = [5, 6, 1, 2, 3, 10];
+        int[] Myarray = [5, 26, 1, 12, 3, 11];
 
-        SortArray(Myarray, func: Sort1);
+        SortArray(Myarray, func: myarray);
         Console.WriteLine("O'sish tartibda");
         for (int i = 0; i < Myarray.Length; i++)
         {
@@ -20,7 +20,7 @@
         Console.WriteLine();
         Console.WriteLine();
         Console.WriteLine();
-        SortArray(Myarray, func: Sort2);
+        SortArray(Myarray, func: myarray2);
         Console.WriteLine("Kamayish tartibda tartibda");
         for (int i = 0; i < Myarray.Length; i++)
         {
@@ -32,7 +32,7 @@
         Console.WriteLine();
         Console.WriteLine();
         Console.WriteLine();
-        SortArray(Myarray, func: Sort3);
+        SortArray(Myarray, func: myarray3);
         Console.WriteLine("Alphabetic tartibda tartiblangan.");
         for (int i = 0; i < Myarray.Length; i++)
         {
@@ -49,7 +49,7 @@
 
 
 
-    public static int[] Sort1(int[] array)
+    public static int[] myarray(int[] array)
     {
 
 
@@ -71,7 +71,7 @@
         return array;
     }
 
-    public static int[] Sort2(int[] array)
+    public static int[] myarray2(int[] array)
     {
 
 
@@ -93,7 +93,7 @@
         return array;
     }
 
-    public static int[] Sort3(int[] array)
+    public static int[] myarray3(int[] array)
     {
         string[] newArray = new string[array.Length];
         for (int i = 0; i < array.Length; i++)
